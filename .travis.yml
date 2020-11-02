@@ -1,4 +1,7 @@
 language: minimal
+branches:
+  only:
+    - develop
 deploy:
   edge: true
   provider: cloudfoundry
@@ -6,5 +9,7 @@ deploy:
   api: https://api.london.cloud.service.gov.uk
   organization: ccs-scale-cat
   space: sandbox
+  on:
+      branches: develop
   password:
     secure: XZ1FgvsnmQFvkgjjN7jan5ud7OirqGmF0xApMQDshK4LM27Q0OIvSZcCAWav6ut0ZGyHwb8Sjm/BvitVg0aDYRAXQNK4ZFXUIH/2hNWlAO+FE4sMc6VCnfMFlEvSav5ZaYQ+3oP6IyBYW0vE4Uu8IxMoWWBp6YtVyAA/Q1bXH/WnysYEQyFgkltwPZXHM8gAXz4XK11zsAEVzVp4+r7Bs6hDosLDyRJGPGrIqeSQdJl7z9MfTybC2a6sWP3V/SgNBYqxFA+emkFq2wJgTzW0UHQGYpPdAQfbzem04kZp3NFAHcUuC9Qu6qyq+KYYPmt61RQayTHA7juSsM9atOFdMosfGG+SJlGN2xFHze5DW2L0XTQbu9jUvHlVGiVFRPL3RPs8w65hsKXSTw/RQ+t7gjzAo9Mbr4jNUgS3jaUjUyJ6se9YyRPmrUASMcZN4LbwT/PL+v65Pi3qet2A6jz9eDoeIxcrGsOVF8FDuit+C1tex738+0r3/l5lcbyLxDOc1f28q4b4DnmTQGBv2XoDedHjdbvRt6toFxKskxwOj4DS5VUS6xLkO9FsgoBOdGFVewCGuXmZN92Z0OQa/Rc7E5ooR0zlNepvya5KNG8wVU0KhCzECExQ8Icq9BNIcV3GtIfBAKQWbncLtrR6RCNQ8umj3USvD8v4BS2gkK7+4XI=
