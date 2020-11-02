@@ -1,4 +1,7 @@
 language: minimal
+branches:
+  only:
+    - develop
 deploy:
   edge: true
   provider: cloudfoundry
