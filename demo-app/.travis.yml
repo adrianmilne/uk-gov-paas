@@ -1,0 +1,7 @@
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: adrian.milne@crowncommercial.gov.uk
+  api: https://api.london.cloud.service.gov.uk
+  organization: ccs-scale-cat
+  space: sandbox

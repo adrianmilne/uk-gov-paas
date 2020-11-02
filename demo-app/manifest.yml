@@ -1,0 +1,6 @@
+---
+applications:
+- name: ade-demo-app
+  memory: 64M
+  buildpacks:
+  - staticfile_buildpack
