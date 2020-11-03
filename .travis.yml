@@ -9,6 +9,7 @@ deploy:
   api: https://api.london.cloud.service.gov.uk
   organization: ccs-scale-cat
   space: sandbox
+  buildpack: https://github.com/cloudfoundry/php-buildpack.git
   on:
     branch: develop
   password:
