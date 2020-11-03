@@ -3,14 +3,13 @@
   <title>PHP Test</title>
  </head>
  <body>
- <?php echo '<p>Hello World</p>'; ?> 
 
  <?php
 
 $ch = curl_init();
  
 //Set the URL that you want to GET by using the CURLOPT_URL option.
-curl_setopt($ch, CURLOPT_URL, 'http://google.com');
+curl_setopt($ch, CURLOPT_URL, 'https://swapi.dev/api/people/1');
  
 //Set CURLOPT_RETURNTRANSFER so that the content is returned as a variable.
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -28,5 +27,6 @@ curl_close($ch);
 echo $data;
 
  ?>
+ 
  </body>
 </html>
