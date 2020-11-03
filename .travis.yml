@@ -1,6 +1,7 @@
 language: php
 php:
    - 7.4
+script: ./build.sh
 branches:
   only:
   - develop
