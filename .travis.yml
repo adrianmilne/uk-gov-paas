@@ -1,4 +1,6 @@
-language: minimal
+language: php
+php:
+   - 7.4
 branches:
   only:
   - develop
