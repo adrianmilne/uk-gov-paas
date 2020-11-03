@@ -3,4 +3,4 @@ applications:
 - name: ade-demo-app
   memory: 64M
   buildpacks:
-  - staticfile_buildpack
+  - https://github.com/cloudfoundry/php-buildpack.git
