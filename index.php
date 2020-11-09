@@ -5,6 +5,10 @@
  <body>
 
  <?php
+echo 'Endpoint is ' .$_ENV["PRIVATE_APP_URL"] . '!';
+?>
+
+ <?php
 
 $ch = curl_init();
  
