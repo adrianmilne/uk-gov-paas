@@ -9,7 +9,8 @@
 $ch = curl_init();
  
 //Set the URL that you want to GET by using the CURLOPT_URL option.
-curl_setopt($ch, CURLOPT_URL, 'https://swapi.dev/api/people/1');
+//curl_setopt($ch, CURLOPT_URL, 'https://swapi.dev/api/people/1');
+curl_setopt($ch, CURLOPT_URL, $_ENV["PRIVATE_APP_URL"]);
  
 //Set CURLOPT_RETURNTRANSFER so that the content is returned as a variable.
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

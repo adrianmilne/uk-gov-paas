@@ -2,5 +2,7 @@
 applications:
 - name: ade-demo-app
   memory: 64M
+  env:
+    PRIVATE_APP_URL: http://ade-api-demo-app.apps.internal:8080
   buildpacks:
   - https://github.com/cloudfoundry/php-buildpack.git
