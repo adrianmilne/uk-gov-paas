@@ -3,6 +3,6 @@ applications:
 - name: ade-demo-app
   memory: 64M
   env:
-    PRIVATE_APP_URL: http://ade-api-demo-app.apps.internal:8080
+    PRIVATE_APP_URL: https://gpaas-spring-test.london.cloudapps.digital/search-terms
   buildpacks:
   - https://github.com/cloudfoundry/php-buildpack.git
